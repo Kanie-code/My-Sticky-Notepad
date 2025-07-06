@@ -1,0 +1,82 @@
+/* Base page styling */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 10px;
+}
+
+/* Add Note Button */
+#addNoteBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #b7b5b5;
+  border: 1px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Container for all notes */
+#notesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Each note wrapper */
+.note {
+  position: relative;
+  background: #fff8a6;
+  border: 1px solid #e0c100;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  min-height: 150px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Textarea inside note */
+.note textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  resize: none;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Delete button */
+.delete-btn {
+  display: none;
+}
+.focus{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 22px;
+  text-align: center;
+  display: block;
+}
